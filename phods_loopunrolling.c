@@ -1,5 +1,5 @@
 /*
-We use Loop Unrolling to we increase the performance of loops by reducing 
+We use Loop Unrolling for X-Y dimensions to increase the performance of loops by reducing 
 the number of iterations and performing multiple calculations within each iteration.
 Below is the modified PHODS function.
 */
