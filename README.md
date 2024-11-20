@@ -27,7 +27,6 @@ We try to find the Pareto Optimal solution for using many different L1I,L1D,L2 c
 (by changing the architecture of the machine that we run the programm on) and different 
 loop unrolling factors on the programm (by 'changing' the loop on the main programm (tables.c))
 
-========================================================================================
 
 To find more information about the research, read --> lab1embedded-report.pdf
 
