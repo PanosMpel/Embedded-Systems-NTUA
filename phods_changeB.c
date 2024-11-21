@@ -1,6 +1,6 @@
 /*
-We use the file phods_loopfusion_final.c and there we try different Block sizes (before the default was 5, now we try B=1,2,5,10)
-Below is the full-code
+We use the file phods_loopfusion_final.c and there we try different symmetric Block sizes (before the default was 5, now we try B=1,2,5,10)
+Below is the full-code 
 */
 
 #include "hal_data.h"
