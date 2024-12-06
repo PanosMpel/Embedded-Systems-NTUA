@@ -8,9 +8,9 @@ void calcDistancesHW(float* data_hw, float* dists_hw)
 	float movie_tmp[USERS_NUM];
 	float dists_hw_tmp[MOVIES_NUM];
 
-#pragma HLS ARRAY_PARTITION variable=data_hw_tmp block factor=2 dim=1
-#pragma HLS ARRAY_PARTITION variable=movie_tmp block factor=2 dim=1
-#pragma HLS ARRAY_PARTITION variable=dists_hw_tmp block factor=2 dim=1
+#pragma HLS ARRAY_PARTITION variable=data_hw_tmp block factor=16 dim=1
+#pragma HLS ARRAY_PARTITION variable=movie_tmp block factor=16 dim=1
+#pragma HLS ARRAY_PARTITION variable=dists_hw_tmp block factor=16 dim=1
 
 
 LOAD_DATA_HW_TMP:
