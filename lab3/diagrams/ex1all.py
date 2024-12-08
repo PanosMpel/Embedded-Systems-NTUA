@@ -4,12 +4,10 @@ import numpy as np
 # Data for speedup and estimation
 labels = ['Without Optimization', 'Unrolling 4-2', 'Partial Pip', 'Full Pip', 'Full Pip Unrol 4', 
           'Full Pip Unrol 4 Array Part 4', 'Full Pip Unrol 4 Array Part 16', 'Full Pip Unrol 4 Array Part 2',
-          'Full Pip Unrol 8 Array Part 16', 'Full Pip Unrol 32 Array Part 32']
+          'Full Pip Unrol 8 Array Part 16', 'Full Pip Unrol 32 Array Part 32', 'Full Unrol 2']
 
-speedup_values = [0.42, 0.76, 1.34, 0, 0, 2.76, 2.76, 2.7, 0, 2.76]
-estimation_values = [3264697, 1806341, 1014225, 482590, 482486, 482408, 482382, 482538, 482492, 482486]
-
-
+speedup_values = [0.42, 0.76, 1.34, 0, 0, 2.76, 2.76, 2.7, 0, 2.76, 2.77]
+estimation_values = [3264697, 1806341, 1014225, 482590, 482486, 482408, 482382, 482538, 482492, 482486, 482538]
 
 # Set positions for the bars
 x = np.arange(len(labels))
@@ -38,6 +36,12 @@ plt.title('Speedup and Estimation Comparison for Different Optimizations')
 # Add legends
 ax1.legend(loc='upper left')
 ax2.legend(loc='upper right')
+
+# Use logarithmic scale for estimation values to make them more readable
+ax2.set_yscale('log')
+
+# Adjust y-axis limits for speedup to increase visual distinction
+ax1.set_ylim(0, 3.5)
 
 # Add annotations for speedup
 for bar in bars1:
