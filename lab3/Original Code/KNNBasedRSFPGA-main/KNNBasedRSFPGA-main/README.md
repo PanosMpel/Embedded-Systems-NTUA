@@ -9,3 +9,5 @@ This exercise demonstrates a movie [Recommendation System](https://en.wikipedia.
 - **various** directory contains the Jupyter notebook that was used in order to understand the input data and create the used dataset.
 
 The MovieLens dataset subset can be found on: https://drive.google.com/drive/folders/1m_kzCO8PBifs6wIZnb-vLuubm76F1B8f?usp=sharing
+
+THE ORIGINALL CODE IS FROM : [GitHub](https://github.com/aferikoglou/KNNBasedRSFPGA)
