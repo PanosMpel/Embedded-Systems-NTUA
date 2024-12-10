@@ -10,4 +10,4 @@ This exercise demonstrates a movie [Recommendation System](https://en.wikipedia.
 
 The MovieLens dataset subset can be found on: https://drive.google.com/drive/folders/1m_kzCO8PBifs6wIZnb-vLuubm76F1B8f?usp=sharing
 
-THE ORIGINALL CODE IS FROM : [GitHub](https://github.com/aferikoglou/KNNBasedRSFPGA)
+The original code is from : [GitHub](https://github.com/aferikoglou/KNNBasedRSFPGA)
