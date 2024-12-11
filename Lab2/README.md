@@ -1,6 +1,5 @@
-# 2nd LAB EXERCISE
-Exercises on Dynamic Data Type Refinement (DDTR)
-
+# 2nd Lab Exercise : Dynamic Data Type Refinement (DDTR)
+ 
 ## Environment
 
 This solution was specifically developed and tested in the following environment:
