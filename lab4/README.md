@@ -21,5 +21,5 @@ The code should be used and tested in the same version for the best results.
 3. **`.ipynb_checkpoints` Folder:**  
    The provided code for **Exercise 2: Quality Measurement**, which includes Jupyter Notebook checkpoints.
 
-4. **Lab4.pdf** for detailed instructions:  
-   [Lab4.pdf](https://github.com/PanosMpel/Embedded-Systems-NTUA/blob/main/lab4/Lab4.pdf)
+4. **[Lab4.pdf](https://github.com/PanosMpel/Embedded-Systems-NTUA/blob/main/lab4/Lab4.pdf)** for detailed instructions:  
+ 
