@@ -100,3 +100,4 @@ void forward_propagation(float *x, float *y)
 	}
 }
 
+
