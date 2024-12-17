@@ -29,11 +29,10 @@ void forward_propagation(float *x, float *y)
 	l_quantized_type layer_1_out[M1];
 	l_quantized_type layer_2_out[M2];
 
-//#pragma HLS ARRAY_PARTITION variable=xbuf block  factor=392 dim=1
+#pragma HLS ARRAY_PARTITION variable=xbuf block  factor=392 dim=1
 #pragma HLS ARRAY_PARTITION variable=layer_1_out block factor=30 dim=1
 #pragma HLS ARRAY_PARTITION variable=layer_2_out block factor=50 dim=1
 
-#pragma HLS ARRAY_PARTITION variable=xbuf block factor=392 dim=1
 
 	//limit resources to max DSP number of Zybo - do not change
 	#pragma HLS ALLOCATION instances=mul limit=80 operation
@@ -42,46 +41,41 @@ void forward_propagation(float *x, float *y)
 	for (int i=0; i<N1; i++)
 	{
 		#pragma HLS PIPELINE II=1
-
-		//#pragma HLS unroll factor=196
 		xbuf[i] = x[i];
 	}
 
-
 	// Layer 1
-		layer_1:
-		for(int i=0; i<N1; i++)
+	layer_1:
+	for(int i=0; i<N1; i++)
+	{
+		#pragma HLS PIPELINE II=1
+		#pragma HLS unroll factor=2
+		for(int j=0; j<M1; j++)
 		{
-	#pragma HLS PIPELINE II=1
-	#pragma HLS unroll factor=8
-			for(int j=0; j<M1; j++)
-			{
-	//#pragma HLS PIPELINE II=1
-	#pragma HLS unroll factor=30
+			//#pragma HLS PIPELINE II=1
+            #pragma HLS unroll factor=30
 			l_quantized_type last = (i==0) ? (l_quantized_type) 0 : layer_1_out[j];
 			quantized_type term = xbuf[i] * W1[i][j];
 			layer_1_out[j] = last + term;
-			}
 		}
-		layer_1_act:
-		for(int i=0; i<M1; i++)
-		{
-	//#pragma HLS PIPELINE II=1
-	#pragma HLS unroll factor=30
-			layer_1_out[i] = ReLU(layer_1_out[i]);
-		}
-
+	}
+	layer_1_act:
+	for(int i=0; i<M1; i++)
+	{
+		#pragma HLS PIPELINE II=1
+		//#pragma HLS unroll factor=30
+		layer_1_out[i] = ReLU(layer_1_out[i]);
+	}
 
 	// Layer 2
 	layer_2:
 	for(int i=0; i<M2; i++)
 	{
 		#pragma HLS PIPELINE II=1
-		//#pragma HLS unroll factor=50
 		l_quantized_type result = 0;
 		for(int j=0; j<N2; j++)
 		{
-			//#pragma HLS PIPELINE II=1
+			#pragma HLS PIPELINE II=1
 			#pragma HLS unroll factor=30
 			l_quantized_type term = layer_1_out[j] * W2[j][i];
 			result += term;
@@ -98,7 +92,7 @@ void forward_propagation(float *x, float *y)
 		for(int j=0; j<N3; j++)
 		{
 			//#pragma HLS PIPELINE II=1
-			//#pragma HLS unroll factor=10
+			#pragma HLS unroll factor=50
 			l_quantized_type term = layer_2_out[j] * W3[j][i];
 			result += term;
 		}
