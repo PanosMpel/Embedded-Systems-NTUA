@@ -98,7 +98,7 @@ void forward_propagation(float *x, float *y)
 		for(int j=0; j<N3; j++)
 		{
 			//#pragma HLS PIPELINE II=1
-			#pragma HLS unroll factor=10
+			//#pragma HLS unroll factor=10
 			l_quantized_type term = layer_2_out[j] * W3[j][i];
 			result += term;
 		}
