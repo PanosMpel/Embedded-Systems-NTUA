@@ -1,12 +1,12 @@
-echo "# 5th Lab Exercise: ARM Processor Assembly Programming
+# 5th Lab Exercise: ARM Processor Assembly Programming
 
 ## Environment
 
 This solution was specifically developed and tested in the **QEMU (Quick Emulator)** environment, simulating the ARM architecture.  
 The following environments are required for the exercises:
 
-- **Task 1:** ARM Assembly Programming (QEMU, Terminal).
-- **Task 2:** Serial Communication Setup (QEMU, Terminal).
+- **Task 1:** ARM Assembly Programming (QEMU).
+- **Task 2:** Serial Communication Setup (QEMU).
 - **Task 3:** C and ARM Assembly Integration (QEMU).
 
 The code should be used and tested in the same setup for best results.
@@ -23,16 +23,16 @@ For setting up QEMU and running the virtual ARM machine, refer to the **QEMU_ARM
 1. **Code:**
    - The initial version of the code before applying the necessary changes. The code is used for **Task 1: String Transformation**, **Task 2: Serial Communication**, and **Task 3: C and Assembly Integration**.
 
-3. **Data:**
-   - Contains the input files used for testing the string transformations and serial communication tasks.
+2. **Src Data :**
+   - Contains the  files rand_str_input_first, rand_str_input_sec, and string_manipulation.
 
-5. **[Exercise5.pdf](https://github.com/yourusername/Embedded-Systems-NTUA/blob/main/lab5/Exercise5.pdf):**
+3. **[Exercise5.pdf](https://github.com/yourusername/Embedded-Systems-NTUA/blob/main/lab5/Exercise5.pdf):**
    - A detailed document with step-by-step instructions for completing the exercises.
 
-6. **QEMU_ARM_Installation_Instructions.pdf:**
+4. **QEMU_ARM_Installation_Instructions.pdf:**
    - A detailed guide for setting up QEMU to emulate the ARM architecture for these exercises.
 
-8. **sources.list:**
+5. **sources.list:**
    - Contains the configuration file for package sources needed in the virtual environment (vs code).
 
 ---
