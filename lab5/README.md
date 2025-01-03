@@ -21,18 +21,16 @@ For setting up QEMU and running the virtual ARM machine, refer to the **QEMU_ARM
 ## Repository Contents
 
 1. **Code:**
-   - The initial version of the code before applying the necessary changes. The  code is used for **Task 1: String Transformation**, **Task 2: Serial Communication**, and **Task 3: C and Assembly Integration**.
+   - The initial version of the code before applying the necessary changes. The code is used for **Task 1: String Transformation**, **Task 2: Serial Communication**, and **Task 3: C and Assembly Integration**.
 
 3. **Data:**
    - Contains the input files used for testing the string transformations and serial communication tasks.
-
 
 5. **[Exercise5.pdf](https://github.com/yourusername/Embedded-Systems-NTUA/blob/main/lab5/Exercise5.pdf):**
    - A detailed document with step-by-step instructions for completing the exercises.
 
 6. **QEMU_ARM_Installation_Instructions.pdf:**
    - A detailed guide for setting up QEMU to emulate the ARM architecture for these exercises.
-
 
 8. **sources.list:**
    - Contains the configuration file for package sources needed in the virtual environment (vs code).
@@ -48,6 +46,4 @@ For setting up QEMU and running the virtual ARM machine, refer to the **QEMU_ARM
 - Implement a serial communication protocol between a **host** and **guest** machine using QEMU's virtual serial port feature. The guest processes a string and identifies the most frequent character (excluding spaces).
 
 ### Task 3: Integration of C with ARM Assembly Code
-- This task combines C code and ARM assembly code to perform string manipulations (like `strlen`, `strcpy`, `strcmp`, etc.), replacing C standard library functions with custom ARM assembly implementations.
-
- 
+- This task combines C code and ARM assembly code to perform string manipulations (like `strlen`, `strcpy`, `strcmp`, etc.), replacing C standard library functions with custom ARM assembly implementations." > README.md
