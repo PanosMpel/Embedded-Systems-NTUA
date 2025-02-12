@@ -1,0 +1,19 @@
+--- builddeb	2020-06-09 16:06:17.000000000 +0300
++++ builddeb_new	2021-01-05 02:12:42.319917500 +0200
+@@ -45,15 +45,7 @@
+ 	arm64)
+ 		debarch=arm64 ;;
+ 	arm*)
+-		if grep -q CONFIG_AEABI=y $KCONFIG_CONFIG; then
+-		    if grep -q CONFIG_VFP=y $KCONFIG_CONFIG; then
+-			debarch=armhf
+-		    else
+-			debarch=armel
+-		    fi
+-		else
+-		    debarch=arm
+-		fi
++		debarch=armhf
+ 		;;
+ 	*)
+ 		echo "" >&2

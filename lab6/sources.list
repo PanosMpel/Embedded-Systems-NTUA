@@ -1,0 +1,10 @@
+deb [trusted=yes] http://archive.debian.org/debian/ jessie main contrib non-free
+deb-src [trusted=yes] http://archive.debian.org/debian/ jessie main contrib non-free
+
+deb [trusted=yes] http://archive.debian.org/debian-security/ jessie/updates main contrib non-free
+deb-src [trusted=yes] http://archive.debian.org/debian-security/ jessie/updates main contrib non-free
+
+# jessie-updates not supported
+# deb http://archive.debian.org/debian/ jessie-updates main contrib non-free
+# deb-src http://archive.debian.org/debian/ jessie-updates main contrib non-free
+
