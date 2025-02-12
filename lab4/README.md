@@ -15,8 +15,7 @@ This solution was specifically developed and tested in the **Xilinx SDSoC 2016.4
 - **Zybo FPGA:** Hardware platform used for deploying the optimized system.
 - **Jupyter Notebook** or **Google Colab:** For visualizing the image reconstruction output.
 
-You can find detailed installation and setup instructions in the following guides:
-- [Lab4.pdf](https://github.com/PanosMpel/Embedded-Systems-NTUA/blob/main/lab4/Lab4.pdf)
+You can find detailed installation and setup instructions in the following guides:  [Lab4.pdf](https://github.com/PanosMpel/Embedded-Systems-NTUA/blob/main/lab4/Lab4.pdf)
 
 ## Repository Contents
 
