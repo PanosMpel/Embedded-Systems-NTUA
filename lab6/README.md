@@ -63,8 +63,8 @@ To set up QEMU and create a virtual ARM machine, follow the instructions provide
 
 ## Task Overview
 
-Task 1: Setting Up QEMU for ARM
+### Task 1: Setting Up QEMU for ARM
 Set up an ARM virtual machine with QEMU to simulate an ARM environment, allowing you to test cross-compiled software on a virtual ARM system.
 
-Task 2: Installing the Custom Cross-Compiler Toolchain with crosstool-ng
+### Task 2: Installing the Custom Cross-Compiler Toolchain with crosstool-ng
 Build and configure a custom cross-compiling toolchain using crosstool-ng for ARM to create executable binaries on a different architecture.
