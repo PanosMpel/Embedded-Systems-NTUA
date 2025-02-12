@@ -7,3 +7,7 @@ lab2  Optimization of Dynamic Data Structures (Dynamic Data Type Refinement – 
 lab3  High Level Synthesis and programming of FPGA Zynq-7000 ARM/FPGA SoC (Zybo) using SDSoC
 
 lab4 Accelerating GAN Algorithms with High Level Synthesis on FPGA Zynq-7000 ARM/FPGA SoC (Zybo) using SDSoC
+
+lab5 ARM Processor Assembly Programming and Serial Communication in QEMU
+
+lab6 Cross-Compiling and Custom Kernel Building for ARM Architecture
