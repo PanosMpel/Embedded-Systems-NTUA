@@ -1,7 +1,5 @@
 # Embedded Systems Exercises for ECE-NTUA 2024-2025
 
-This repository contains the lab exercises for the Embedded Systems course at the School of Electrical and Computer Engineering, National Technical University of Athens (ECE-NTUA) for the academic year 2024-2025.
-
 ## Lab Exercises Overview
 
 Exercises on embedded systems ECE-NTUA.
@@ -17,3 +15,8 @@ lab4 Accelerating GAN Algorithms with High Level Synthesis on FPGA Zynq-7000 ARM
 lab5 ARM Processor Assembly Programming and Serial Communication in QEMU
 
 lab6 Cross-Compiling and Custom Kernel Building for ARM Architecture
+
+
+
+This repository contains the lab exercises for the Embedded Systems course at the School of Electrical and Computer Engineering, National Technical University of Athens (ECE-NTUA) for the academic year 2024-2025.
+
